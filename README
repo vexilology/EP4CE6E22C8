@@ -1,0 +1,12 @@
+Device family:
+  family - Cyclone IV E
+
+Device name:
+  name - EP4CE6E22C8 - 1.2V
+
+***
+Attention! Check settings!
+***
+Assignments -> Device -> Device and Pin Options:
+  Unused Pins:
+    Reserve all unused pins: As input tri-stated with weak pull-up
