@@ -1,4 +1,6 @@
-module numbers(output [111:0]Y);
+module numbers(output [9:0]Y,
+               input [39:0]X,
+               input [1:0]A);
 
   // 8'd255;
   // 8'hFF;
@@ -13,8 +15,33 @@ module numbers(output [111:0]Y);
 
   // '\n'->1010->A, 'one tab or \t'->1001->9
   // 14*8=112->output=111
-  assign Y = "numbers module";
+  // assign Y = "numbers module";
   // '\'->1011100->5C
-  assign Y[7:0] = 8'h5C;
+  // assign Y[7:0] = 8'h5C;
+  
+  /*
+  assign Y = A + B;
+  assign Y = A - B;
+  assign Y = A * B;
+  assign Y = A ** 2'd3;
+  assign Y = A / B;
+  assign Y = A % B;
+
+  assign Y = C? A : B;
+  assign Y = C? A : 8'bZ1;
+  assign Y = A & B;
+  assign Y = ~(A & B);
+  assign Y = A ^ B;
+  assign Y = A ~^ B;
+  assign Y = A << 2;
+  assign Y = A << B;
+  assign Y = A >> 1;
+  assign Y = A >>> 1;
+  assign Y = A >>> B;
+  */
+
+  wire [39:0]TempY;
+  assign TempY = X >> A*10;
+  assign Y = TempY[9:0];
 
 endmodule
