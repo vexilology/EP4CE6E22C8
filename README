@@ -4,9 +4,14 @@ Device family:
 Device name:
   name - EP4CE6E22C8 - 1.2V
 
+
+***
+Start!
+  - Compile and check: signal.v
+
 ***
 Attention! Check settings!
-***
+
 Assignments -> Device -> Device and Pin Options:
   Unused Pins:
     Reserve all unused pins: As input tri-stated with weak pull-up
