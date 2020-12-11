@@ -1,4 +1,4 @@
-module test_dual-portedRAM #(parameter DW=8, AW=6)(output reg [DW-1:0]aQ,
+module test_dualportedRAM #(parameter DW=8, AW=6)(output reg [DW-1:0]aQ,
                                                    input aWR,
                                                    input [AW-1:0]aA,
                                                    input [DW-1:0]aD,
