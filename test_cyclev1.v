@@ -1,8 +1,8 @@
-module test_cycle(output reg [3:0]Q,
-                  input [3:0]D,
-                  input L,
-                  input C,
-                  input aR);
+module test_cyclev1(output reg [3:0]Q,
+                    input [3:0]D,
+                    input L,
+                    input C,
+                    input aR);
 
   always @(posedge C or posedge aR)
   begin
