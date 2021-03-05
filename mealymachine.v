@@ -126,7 +126,7 @@ module mealymachine(output [1:0]StateQ,
   begin
     if (aR)
     begin
-      aQ <= Q;
+      aQ <= 0;
     end
     else
     begin

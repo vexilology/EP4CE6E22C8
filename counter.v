@@ -17,6 +17,6 @@ module DT(output Q,
           input D,
           input C);
 
-  DFF DT(.q(Q), .d(D), .clk(C), .clrn(1'd1'), .prn(1'd1'));
+  DFF DT(.q(Q), .d(D), .clk(C), .clrn(1'd1), .prn(1'd1));
 
 endmodule

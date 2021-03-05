@@ -29,15 +29,15 @@ module scrambler #(parameter N=3) (output reg [N-1:0]Y,
     end
   end
 
-  req [2**N-1:0]temp;
+  reg [2**N-1:0]Temp;
   always @(*)
   begin
     integer i;
-    temp = X;
+    Temp = X;
     Y = 0;
-    for (i=0; temp[2**N-1:1]; i=i)
+    for (i=0; Temp[2**N-1:1]; i=i)
     begin
-      temp = temp >> 1;
+      Temp = Temp >> 1;
       Y = Y + 1'd1;
     end
   end

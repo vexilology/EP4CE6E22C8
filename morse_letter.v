@@ -1,6 +1,6 @@
 /*
 * Author: Jack0v, with minor changes.
-* Morse code decoder, digits only.
+* Morse code decoder, letters: A, E, F, H, I, S, U only.
 */
 module morse_letter((*chip_pin="133, 80, 83, 84, 85, 86, 87"*) output [6:0]nABCDEFGY,
                     (*chip_pin="52, 51, 73, 74, 75, 76, 77"*) output [6:0]nABCDEFGIY,
@@ -90,7 +90,6 @@ module CT #(parameter N=3) (output reg [N-1:0]Q,
   end
 
 endmodule
-
 
 module Converser(output reg [6:0]Y,
                  output reg [6:0]StateY,
