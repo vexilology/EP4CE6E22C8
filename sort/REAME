@@ -1,9 +1,8 @@
-SORTING BY VERILOG
+SORTING BY VERILOG:
 
-***
 
-read random data from in-system memory: 14 13 12 11 10 0F 0E 0D 0C 0B 0A 09 08 07 06 05
+read random data from in-system memory:
+  14 13 12 11 10 0F 0E 0D 0C 0B 0A 09 08 07 06 05
 
-***
-
-need result: 05 06 07 08 09 0A 0B 0C 0D 0E 0F 10 11 12 13 14
+need result:
+  05 06 07 08 09 0A 0B 0C 0D 0E 0F 10 11 12 13 14
